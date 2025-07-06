@@ -1061,6 +1061,43 @@ START: Theme Header CSS
 .mainmenu ul > li.menu-item-has-children > a, .mainmenu ul > li.has-dropdown > a {
   padding-right: 20px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .mainmenu ul > li > a {
+    font-size: 15px;
+  }
+      .header-search .search {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+   .site_logo .logo img {
+    height: 60px;
+  }
+  .header-search .search {
+        font-size: 15px !important;
+        width: 35px !important;
+        height: 35px !important;
+    }
+.mainmenu ul {
+        gap: 13px !important;
+    }
+    .mainmenu ul > li.menu-item-has-children > a, .mainmenu ul > li.has-dropdown > a {
+        padding-right: 16px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .mainmenu ul > li > a {
+        font-size: 14px;
+    }
+        .site_logo .logo img {
+        height: 53px;
+    }
+  }
+
 .mainmenu ul > li.menu-item-has-children > a::after, .mainmenu ul > li.has-dropdown > a::after {
   content: "\e929";
   font-family: "bexon-icons";
