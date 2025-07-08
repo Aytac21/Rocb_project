@@ -1066,7 +1066,7 @@ START: Theme Header CSS
   .mainmenu ul > li > a {
     font-size: 15px;
   }
-      .header-search .search {
+      .header-search .search, .header-user .user {
         font-size: 16px;
         width: 35px;
         height: 35px;
@@ -1077,7 +1077,7 @@ START: Theme Header CSS
    .site_logo .logo img {
     height: 60px;
   }
-  .header-search .search {
+  .header-search .search, .header-user .user {
         font-size: 15px !important;
         width: 35px !important;
         height: 35px !important;
@@ -1211,11 +1211,11 @@ START: Theme Header CSS
   }
 }
 
-.header-search {
+.header-search, .header-user {
   line-height: 1;
   position: relative;
 }
-.header-search .search {
+.header-search .search, .header-user .user {
   color: var(--tj-color-heading-primary);
   font-size: 20px;
   line-height: 1;
@@ -1233,14 +1233,14 @@ START: Theme Header CSS
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header-search .search i {
+.header-search .search, .header-user .user i {
   line-height: 1;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-search .search {
+  .header-search .search, .header-user .user {
     font-size: 18px;
     width: 44px;
     height: 44px;
@@ -1484,6 +1484,10 @@ START: Theme Footer CSS
 
 .footer-logo {
   max-width: 150px;
+}
+
+.footer-logo img{
+  height: 70px;
 }
 
 .award-logo-area {
@@ -3527,14 +3531,13 @@ START: Heading CSS
   -webkit-margin-end: auto;
           margin-inline-end: auto;
   width: 100%;
-  margin-bottom: 52px;
 }
 .sec-heading-centered {
   max-width: 550px;
   text-align: center;
 }
 .sec-heading .sec-title {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 .sec-heading .sec-title span {
   color: var(--tj-color-theme-primary);
@@ -8518,7 +8521,7 @@ START: Countup CSS
 .tj-countup-section {
   position: relative;
   z-index: 2;
-  margin-bottom: -122px;
+  margin-bottom: -70px;
 }
 
 .countup-wrap {
@@ -8946,7 +8949,9 @@ START: Contact CSS
           margin-inline-start: 0;
   -webkit-margin-end: 0;
           margin-inline-end: 0;
-  margin-bottom: 35px;
+          display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tj-contact-section .sec-heading .sec-title {
   color: var(--tj-color-common-white);
@@ -8998,7 +9003,7 @@ START: Contact CSS
           margin-inline-start: 0;
   -webkit-margin-end: 15px;
           margin-inline-end: 15px;
-  padding: 60px 50px;
+      padding: 20px 40px;
   border-radius: 12px;
 }
 .contact-form .title {
@@ -9183,6 +9188,7 @@ START: Contact CSS
           backdrop-filter: blur(6px);
   position: relative;
   z-index: 1;
+  left: 29%;
 }
 .contact-form.style-2 .title {
   margin-bottom: 40px;
@@ -17415,3 +17421,13 @@ START: Hero CSS
 }
 
 /* !END: Hero CSS *//*# sourceMappingURL=main.css.map */
+
+.map-contact {
+  position: absolute;
+  top:20px;
+}
+
+.tj-contact-section .sec-heading .sec-title {
+  margin-bottom: 0 !important;
+      line-height: 1.4;
+}
