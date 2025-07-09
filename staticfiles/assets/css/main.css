@@ -18867,3 +18867,8 @@ START: Hero CSS
 .calendar-page-end {
   margin-bottom: 30px;
 }
+
+.calendar-footer {
+  padding-top: 40px;
+  margin-top: 30px;
+}
