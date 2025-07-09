@@ -18843,3 +18843,27 @@ START: Hero CSS
 .home-about-section {
   padding-top: 25px !important;
 }
+
+.home-map-content {
+  width: 100%;
+}
+
+.calendar-page {
+  margin-bottom: 60px;
+}
+
+.calendar-animation {
+  animation-name: fadeInUp !important;
+  animation-duration: 1s !important;
+  animation-fill-mode: both;
+}
+
+#calendar {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.calendar-page-end {
+  margin-bottom: 30px;
+}
